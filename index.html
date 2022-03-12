@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles/style.css" rel="stylesheet">
+	<title>AvaxPlus</title>
+</head>
+<body>
+	<nav class="header">
+		<div class="header__menu">
+			<div class="logo">
+				<img class="header__logo" src="images/logo.png" width="152" height="104"></img>
+			</div>
+			<ul class="header__menu-list">
+				<li class="header__li-list">
+					<a class="nav-link" href="#">ДЕПОЗИТ</a>
+				</li>
+				<li class="header__li-list">
+					<a class="nav-link" href="#">TELEGRAM</a>
+				</li>
+				<li class="header__li-list">
+					<a class="nav-link" href="#">АУДИТ</a>
+				</li>
+				<li class="header__li-list">
+					<a class="nav-link" href="#">КОНТАКТ</a>
+				</li>
+				<li class="header__li-list">
+					<a class="nav-link" href="#">КАК НАЧАТЬ</a>
+				</li>
+			</ul>
+			<a href="#" class="header__connect_a">
+				<div class="header__connect">
+					<img class="header__connect_money" src="images/money.png" width="34" height="28">
+					<div class="header__wallet-block">
+						<p class="header__connect_p">Подключить</p>
+						<p class="header__connect_p">кошелек</p>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+		<img class="background-orange-1" src="images/orange1.png">
+	</nav>
+	<div class="content">
+		<h1 class="content__first-h">Стабильное и прибыльное Dapp для <wbr> выращивания урожая</h1>
+		<span class="content__big-span">Lorem ipsum</span>
+		<span class="content__big-span">dolor sit amet,</span>
+		<span class="content__big-span">consectetur</span>
+		<p class="content__reward content__reward-top">От 10% до 20% ROI в день</p>
+		<p class="content__reward content__reward-bottom">5 уровней реферальных вознаграждений</p>
+		<img src="images/coin.png" alt="coin" class="content__coin">
+
+		<div class="content__info-bnb">
+			<div class="content__info-cotainer">
+				<div class="content__info-block-bnb">
+					<img src="images/chips.png" alt="chips" class="content__info-block-img">
+					<div class="content__info-txt">
+						<p class="content__info-p content__info-p-bottom-top">Всего инвестировано:</p>
+						<p class="content__info-p content__info-p-bottom">414144<span>.5687 BNB</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="content__info-cotainer">
+				<div class="content__info-block-bnb">
+					<img src="images/group_money.png" alt="group_money" class="content__info-block-img">
+					<div class="content__info-txt">
+						<p class="content__info-p content__info-p-bottom-top">Начислено реферальных:</p>
+						<p class="content__info-p content__info-p-bottom">414144<span>.5687 BNB</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="content__info-cotainer">
+				<div class="content__info-block-bnb">
+					<img src="images/group_people.png" alt="group_people" class="content__info-block-img">
+					<div class="content__info-txt">
+						<p class="content__info-p content__info-p-bottom-top">Количество пользователей:</p>
+						<p class="content__info-p content__info-p-bottom">4141</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img class="background-coin-left" src="images/background-coin-left.png">
+		<div class="content__calculate-profit-title">
+			<img src="images/play.png" alt="icon" class="content__calculate-profit-title_icon">
+			<h2 class="content__calculate-profit-h2">calculate <span>profit</span></h2>
+		</div>
+		<div class="content__calculate-profit-container content__backgrounds-block"><!-- сделать одинааковые классы -->
+			<div class="content__calculate-profit">
+				<div class="content__deposite-block">
+					<div class="content__deposit-days">
+						<p class="calculate__deposit-p">Deposit period (days):</p>
+						<div class="calculate__circle calculate__circle-days">
+							<span id="calc-days" class="calculate__days-deposit calculate__days-deposit-1">56</span>
+							<span class="calculate__days-deposit calculate__days-deposit-2">дней</span>
+						</div>
+						<div class="calculate__amount-range">
+							<div class="calculate__amount-range">
+								<input class="calculate__amount-range-input" type="range" min="0" max="" value="56" step="1" id="input-days">
+								<div class="track"></div>
+							</div>
+						</div>
+					</div>
+					<img src="images/calc.png" alt="calucalter" class="cotent__calculate-img" width="170" height="170">
+					<div class="content__deposit-amount">
+						<p class="calculate__amount-p">Deposit period (days):</p>
+						<div class="calculate__circle calculate__circle-amount">
+							<span class="calculate__days-amount calculate__days-amount-1">414144.<span class="calculate__days-amount-span-into">56</span></span>
+							<span class="calculate__days-amount calculate__days-amount-2">BNB</span>
+						</div>
+						<div class="calculate__amount-range">
+							<input type="range" class="calculate__amount-range-input">
+							<div class="track"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content__invest">
+				<div class="invest__top-block">
+					<div class="invest__dayly">
+						<p class="invest_daylay-p invest_p">Dayly ROI:</p>
+						<p class="invest_percent invest_percent-delay">9.66%</p>
+					</div>
+					<div class="invest__profit">
+						<p class="invest_profit-p invest_p">Total profit:</p>
+						<p class="invest_percent invest_percent_profit">174%</p>
+					</div>
+				</div>
+				<div class="invest__center-block">
+					<p class="invest__will-days">In 18 days you will earn:</p>
+					<p class="invest__end-amount-bnb">0.174 BNB</p>
+				</div>
+				<button class="invest__btn">Invest now</button>
+			</div>
+		</div>
+
+		<div class="content__dashboard-title">
+			<img src="images/play.png" alt="icon" class="content__calculate-profit-title_icon">
+			<h2 class="content__calculate-profit-h2 content__dashboard-h2">your <span>DAshboard</span></h2>
+		</div>
+
+		<div class="content__calculate-profit-container content__backgrounds-block content__dashboard-container">
+			<div class="content__calculate-profit content__dashboard">
+				<div class="dashboard__profile-blocks">
+					<img src="images/profile.png" alt="profile" class="dashboard__profile-icon">
+					<div class="dashboard__ref">
+						<p class="dashboard__ref-p">Your referral link:</p>
+						<a href="#" class="dashboard__link">https://avaxplus.com/reflink/0x475439875698</a>
+					</div>
+					<button class="dashboard__btn dashboard__btn-invest">Invest</button>
+					<button class="dashboard__btn dashboard__btn-widthdraw">withdraw</button>
+				</div>
+				<div class="dashboard__container-bnb-1">
+					<div class="dashboard__block">
+						<p class="dashboard__block-title">Withdrawable (Divs+Refs):</p>
+						<div class="dashboard__bottom-block">
+							<span class="dashboard__bnb-amount">0 BNB</span>
+						</div>
+					</div>
+					<div class="dashboard__block">
+						<p class="dashboard__block-title">Total invested:</p>
+						<div class="dashboard__bottom-block">
+							<span class="dashboard__bnb-amount"> 0.1 BNB</span>
+						</div>
+					</div>
+				</div>
+				<div class="dashboard__container-bnb-2">
+					<div class="dashboard__block">
+						<p class="dashboard__block-title">Total withdrawal:</p>
+						<div class="dashboard__bottom-block">
+							<span class="dashboard__bnb-amount">0 BNB</span>
+						</div>
+					</div>
+					<div class="dashboard__block">
+						<p class="dashboard__block-title">Total referral reward:</p>
+						<div class="dashboard__bottom-block">
+							<span class="dashboard__bnb-amount">0 BNB</span>
+						</div>
+					</div>
+				</div>
+				<div class="dashboard__lvl">
+					<div class="dashboard__lvl-block">
+						<span class="dashboard__lvl-text">1 lvl:</span>
+						<span class="dashboard__ref-text">0 referrals</span>
+						<span class="dashboard__rewards-text">5% referral rewards</span>
+					</div>
+					<div class="dashboard__lvl-block">
+						<span class="dashboard__lvl-text">2 lvl:</span>
+						<span class="dashboard__ref-text">0 referrals</span>
+						<span class="dashboard__rewards-text">3% referral rewards</span>
+					</div>
+					<div class="dashboard__lvl-block">
+						<span class="dashboard__lvl-text">3 lvl:</span>
+						<span class="dashboard__ref-text">0 referrals</span>
+						<span class="dashboard__rewards-text">2% referral rewards</span>
+					</div>
+					<div class="dashboard__lvl-block">
+						<span class="dashboard__lvl-text">4 lvl:</span>
+						<span class="dashboard__ref-text">0 referrals</span>
+						<span class="dashboard__rewards-text">1% referral rewards</span>
+					</div>
+					<div class="dashboard__lvl-block">
+						<span class="dashboard__lvl-text">5 lvl:</span>
+						<span class="dashboard__ref-text">0 referrals </span>
+						<span class="dashboard__rewards-text">5% referral rewards</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content__dashboard-title">
+			<img class="background-orange-2" src="images/background-orange-2.png">
+			<img class="background-coin-right" src="images/background-coin-right.png">
+			<img src="images/play.png" alt="icon" class="content__calculate-profit-title_icon">
+			<h2 class="content__calculate-profit-h2 content__dashboard-h2">your <span>last Deposits</span></h2>
+		</div>
+
+		<div class="content__last-deposits">
+			<p class="content__all-deposit">Всего депозитов: <span class="content__amount-all-deposit">231</span></p>
+			<div class="deposit__plans deposit__plans1">
+				<div class="deposit__plan-container deposit__container-plan1 content__backgrounds-block"> <!-- класс -->
+					<div class="deposit__plan content__calculate-profit"> <!-- план -->
+						<div class="deposit__plan-percent-container">
+							<div class="deposit__plan-figure-top">
+								<span class="deposit__plan-figure-txt">Plan 1</span>
+							</div>
+							<div class="deposit__plan-percent">
+								<span class="deposit_plan-percent-span">120.0%</span>
+								<span class="deposit_plan-deylay-span">Dayly profit 8.0%</span>
+							</div>
+							<div class="deopsit__plan-matic">
+								<span class="deposit_plan-matic-title">MATIC:</span>
+								<span class="deposit_plan-matic-amount deposit_plan-matic-amount">5.00</span>
+							</div>
+						</div>
+						<div class="deposit_plan-time-container">
+							<div class="deposit_plan-time">
+								<span class="deposit_plan-time-start-span">Дата начала:
+									<span class="deposit_plan-time-start-amount">05.03</span>
+								</span>
+								<span class="deposit_plan-time-end-span">Дата окончания:
+									<span class="deposit_plan-time-start-amount">20.03</span>
+								</span>
+							</div>
+							<div class="deposit_plan-time-matic">
+								<span class="deposit_plan-time-title">MATIC:</span>
+								<span class="deposit_plan-time-amount">6.00</span>
+							</div>
+						</div>
+						<div class="deposit__circle-container">
+							<div class="deposit__circle">
+								<img src="images/circle_lines.png" alt="circle" class="circle_empty cricle_first">
+								<img src="images/circle_first-full.png" alt="circle-full" class="circle-full cricle_first-full">
+								<span class="deposit__circle-percent">42%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="deposit__plan-container deposit__container-plan1 content__backgrounds-block"> <!-- класс -->
+					<div class="deposit__plan content__calculate-profit"> <!-- план -->
+						<div class="deposit__plan-percent-container">
+							<div class="deposit__plan-figure-top">
+								<span class="deposit__plan-figure-txt">Plan 1</span>
+							</div>
+							<div class="deposit__plan-percent">
+								<span class="deposit_plan-percent-span">120.0%</span>
+								<span class="deposit_plan-deylay-span">Dayly profit 8.0%</span>
+							</div>
+							<div class="deopsit__plan-matic">
+								<span class="deposit_plan-matic-title">MATIC:</span>
+								<span class="deposit_plan-matic-amount deposit_plan-matic-amount">5.00</span>
+							</div>
+						</div>
+						<div class="deposit_plan-time-container">
+							<div class="deposit_plan-time">
+								<span class="deposit_plan-time-start-span">Дата начала:
+									<span class="deposit_plan-time-start-amount">05.03</span>
+								</span>
+								<span class="deposit_plan-time-end-span">Дата окончания:
+									<span class="deposit_plan-time-start-amount">20.03</span>
+								</span>
+							</div>
+							<div class="deposit_plan-time-matic">
+								<span class="deposit_plan-time-title">MATIC:</span>
+								<span class="deposit_plan-time-amount">6.00</span>
+							</div>
+						</div>
+						<div class="deposit__circle-container">
+							<div class="deposit__circle">
+								<img src="images/circle_lines.png" alt="circle" class="circle_empty cricle_second">
+								<img src="images/circle_second-full.png" alt="circle-full" class="circle-full circle_second-full">
+								<span class="deposit__circle-percent">50%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="deposit__plans deposit__plans2">
+				<div class="deposit__plan-container deposit__container-plan1 content__backgrounds-block"> <!-- класс -->
+					<div class="deposit__plan content__calculate-profit"> <!-- план -->
+						<div class="deposit__plan-percent-container">
+							<div class="deposit__plan-figure-top">
+								<span class="deposit__plan-figure-txt">Plan 1</span>
+							</div>
+							<div class="deposit__plan-percent">
+								<span class="deposit_plan-percent-span">120.0%</span>
+								<span class="deposit_plan-deylay-span">Dayly profit 8.0%</span>
+							</div>
+							<div class="deopsit__plan-matic">
+								<span class="deposit_plan-matic-title">MATIC:</span>
+								<span class="deposit_plan-matic-amount deposit_plan-matic-amount">5.00</span>
+							</div>
+						</div>
+						<div class="deposit_plan-time-container">
+							<div class="deposit_plan-time">
+								<span class="deposit_plan-time-start-span">Дата начала:
+									<span class="deposit_plan-time-start-amount">05.03</span>
+								</span>
+								<span class="deposit_plan-time-end-span">Дата окончания:
+									<span class="deposit_plan-time-start-amount">20.03</span>
+								</span>
+							</div>
+							<div class="deposit_plan-time-matic">
+								<span class="deposit_plan-time-title">MATIC:</span>
+								<span class="deposit_plan-time-amount">6.00</span>
+							</div>
+						</div>
+						<div class="deposit__circle-container">
+							<div class="deposit__circle">
+								<img src="images/circle_lines.png" alt="circle" class="circle_empty cricle_third">
+								<img src="images/circle_third-full.png" alt="circle-full" class="circle-full ">
+								<span class="deposit__circle-percent">75%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="deposit__plan-container deposit__container-plan1 content__backgrounds-block-grey"> <!-- класс -->
+					<div class="deposit__plan content__calculate-profit"> <!-- план -->
+						<div class="deposit__plan-percent-container">
+							<div class="deposit__plan-figure-top deposit__plan-figure-top_grey">
+								<span class="deposit__plan-figure-txt">Plan 1</span>
+							</div>
+							<div class="deposit__plan-percent">
+								<span class="deposit_plan-percent-span">120.0%</span>
+								<span class="deposit_plan-deylay-span deposit__plan-txt_grey">Dayly profit 8.0%</span>
+							</div>
+							<div class="deopsit__plan-matic">
+								<span class="deposit_plan-matic-title">MATIC:</span>
+								<span class="deposit_plan-matic-amount deposit_plan-matic-amount deposit__plan-txt_white">5.00</span>
+							</div>
+						</div>
+						<div class="deposit_plan-time-container">
+							<div class="deposit_plan-time">
+								<span class="deposit_plan-time-start-span deposit__plan-txt_grey">Дата начала:
+									<span class="deposit_plan-time-start-amount deposit__plan-txt_white">05.03</span>
+								</span>
+								<span class="deposit_plan-time-end-span deposit__plan-txt_grey">Дата окончания:
+									<span class="deposit_plan-time-start-amount deposit__plan-txt_white">20.03</span>
+								</span>
+							</div>
+							<div class="deposit_plan-time-matic">
+								<span class="deposit_plan-time-title">MATIC:</span>
+								<span class="deposit_plan-time-amount deposit__plan-txt_white">6.00</span>
+							</div>
+						</div>
+						<div class="deposit__circle-container deposit__circle-container-grey">
+							<div class="deposit__circle">
+								<img src="images/circle_lines.png" alt="circle" class="circle_empty">
+								<img src="images/circle_full.png" alt="circle-full" class="circle-full ">
+								<span class="deposit__circle-percent deposit__circle-percent_grey">100%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="deposit__plans deposit__plans3">
+				<div class="deposit__plan-container deposit__container-plan1 content__backgrounds-block-grey"> <!-- класс -->
+					<div class="deposit__plan content__calculate-profit"> <!-- план -->
+						<div class="deposit__plan-percent-container">
+							<div class="deposit__plan-figure-top deposit__plan-figure-top_grey">
+								<span class="deposit__plan-figure-txt">Plan 1</span>
+							</div>
+							<div class="deposit__plan-percent">
+								<span class="deposit_plan-percent-span">120.0%</span>
+								<span class="deposit_plan-deylay-span deposit__plan-txt_grey">Dayly profit 8.0%</span>
+							</div>
+							<div class="deopsit__plan-matic">
+								<span class="deposit_plan-matic-title">MATIC:</span>
+								<span class="deposit_plan-matic-amount deposit_plan-matic-amount deposit__plan-txt_white">5.00</span>
+							</div>
+						</div>
+						<div class="deposit_plan-time-container">
+							<div class="deposit_plan-time">
+								<span class="deposit_plan-time-start-span deposit__plan-txt_grey">Дата начала:
+									<span class="deposit_plan-time-start-amount deposit__plan-txt_white">05.03</span>
+								</span>
+								<span class="deposit_plan-time-end-span deposit__plan-txt_grey">Дата окончания:
+									<span class="deposit_plan-time-start-amount deposit__plan-txt_white">20.03</span>
+								</span>
+							</div>
+							<div class="deposit_plan-time-matic">
+								<span class="deposit_plan-time-title">MATIC:</span>
+								<span class="deposit_plan-time-amount deposit__plan-txt_white">6.00</span>
+							</div>
+						</div>
+						<div class="deposit__circle-container deposit__circle-container-grey">
+							<div class="deposit__circle">
+								<img src="images/circle_lines.png" alt="circle" class="circle_empty">
+								<img src="images/circle_full.png" alt="circle-full" class="circle-full ">
+								<span class="deposit__circle-percent deposit__circle-percent_grey">100%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="deposit__plan-container deposit__container-plan1 content__backgrounds-block-grey deposit-plan_grey"> <!-- класс -->
+					<div class="deposit__plan content__calculate-profit"> <!-- план -->
+						<div class="deposit__plan-percent-container">
+							<div class="deposit__plan-figure-top deposit__plan-figure-top_grey">
+								<span class="deposit__plan-figure-txt">Plan 1</span>
+							</div>
+							<div class="deposit__plan-percent">
+								<span class="deposit_plan-percent-span">120.0%</span>
+								<span class="deposit_plan-deylay-span deposit__plan-txt_grey">Dayly profit 8.0%</span>
+							</div>
+							<div class="deopsit__plan-matic">
+								<span class="deposit_plan-matic-title">MATIC:</span>
+								<span class="deposit_plan-matic-amount deposit_plan-matic-amount deposit__plan-txt_white">5.00</span>
+							</div>
+						</div>
+						<div class="deposit_plan-time-container">
+							<div class="deposit_plan-time">
+								<span class="deposit_plan-time-start-span deposit__plan-txt_grey">Дата начала:
+									<span class="deposit_plan-time-start-amount deposit__plan-txt_white">05.03</span>
+								</span>
+								<span class="deposit_plan-time-end-span deposit__plan-txt_grey">Дата окончания:
+									<span class="deposit_plan-time-start-amount deposit__plan-txt_white">20.03</span>
+								</span>
+							</div>
+							<div class="deposit_plan-time-matic">
+								<span class="deposit_plan-time-title">MATIC:</span>
+								<span class="deposit_plan-time-amount deposit__plan-txt_white">6.00</span>
+							</div>
+						</div>
+						<div class="deposit__circle-container deposit__circle-container-grey">
+							<div class="deposit__circle">
+								<img src="images/circle_lines.png" alt="circle" class="circle_empty">
+								<img src="images/circle_full.png" alt="circle-full" class="circle-full ">
+								<span class="deposit__circle-percent deposit__circle-percent_grey">100%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="deposit__plan-pages">
+				<div class="deposit__plan-page deposit__plan-page-1"></div>
+				<div class="deposit__plan-page deposit__plan-page-2"></div>
+				<div class="deposit__plan-page deposit__plan-page-3 deposit__plan-page_active"></div>
+				<div class="deposit__plan-page deposit__plan-page-4"></div>
+			</div>
+
+			<div class="content__dashboard-title">
+				<img src="images/play.png" alt="icon" class="content__calculate-profit-title_icon">
+				<h2 class="content__calculate-profit-h2 content__dashboard-h2">last <span>Deposits users</span></h2>
+				<img class="background-coin-right-one" src="images/coin-one-right.png">
+			</div>
+			<div class="content__last-deposit-users-container">
+				<div class="last-deposit-users content__backgrounds-block">
+					<div class="last-deposit-users-list content__calculate-profit">
+						<div class="last-deposit-user-blocks">
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-login-title top-title">Пользователь:</p>
+								<p class="last-deposit-user-login">User_324762395145</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-investition-title top-title">Инвестировано: </p>
+								<p class="last-deposit-user-investition-time">23.12.2022  |  23:47</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-time-title top-title">На время:</p>
+								<p class="last-deposit-user-time-too">14 дней</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-sum-title top-title">Сумма депозита:</p>
+								<p class="last-deposit-user-sum">0.1230 BNB</p>
+							</div>
+						</div>
+						<div class="last-deposit-user-blocks">
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-login-title top-title">Пользователь:</p>
+								<p class="last-deposit-user-login">User_324762395145</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-investition-title top-title">Инвестировано: </p>
+								<p class="last-deposit-user-investition-time">23.12.2022  |  23:47</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-time-title top-title">На время:</p>
+								<p class="last-deposit-user-time-too">14 дней</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-sum-title top-title">Сумма депозита:</p>
+								<p class="last-deposit-user-sum">0.1230 BNB</p>
+							</div>
+						</div>
+						<div class="last-deposit-user-blocks">
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-login-title top-title">Пользователь:</p>
+								<p class="last-deposit-user-login">User_324762395145</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-investition-title top-title">Инвестировано: </p>
+								<p class="last-deposit-user-investition-time">23.12.2022  |  23:47</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-time-title top-title">На время:</p>
+								<p class="last-deposit-user-time-too">14 дней</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-sum-title top-title">Сумма депозита:</p>
+								<p class="last-deposit-user-sum">0.1230 BNB</p>
+							</div>
+						</div>
+						<div class="last-deposit-user-blocks">
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-login-title top-title">Пользователь:</p>
+								<p class="last-deposit-user-login">User_324762395145</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-investition-title top-title">Инвестировано: </p>
+								<p class="last-deposit-user-investition-time">23.12.2022  |  23:47</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-time-title top-title">На время:</p>
+								<p class="last-deposit-user-time-too">14 дней</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-sum-title top-title">Сумма депозита:</p>
+								<p class="last-deposit-user-sum">0.1230 BNB</p>
+							</div>
+						</div>
+						<div class="last-deposit-user-blocks">
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-login-title top-title">Пользователь:</p>
+								<p class="last-deposit-user-login">User_324762395145</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-investition-title top-title">Инвестировано: </p>
+								<p class="last-deposit-user-investition-time">23.12.2022  |  23:47</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-time-title top-title">На время:</p>
+								<p class="last-deposit-user-time-too">14 дней</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-sum-title top-title">Сумма депозита:</p>
+								<p class="last-deposit-user-sum">0.1230 BNB</p>
+							</div>
+						</div>
+						<div class="last-deposit-user-blocks">
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-login-title top-title">Пользователь:</p>
+								<p class="last-deposit-user-login">User_324762395145</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-investition-title top-title">Инвестировано: </p>
+								<p class="last-deposit-user-investition-time">23.12.2022  |  23:47</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-time-title top-title">На время:</p>
+								<p class="last-deposit-user-time-too">14 дней</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-sum-title top-title">Сумма депозита:</p>
+								<p class="last-deposit-user-sum">0.1230 BNB</p>
+							</div>
+						</div>
+						<div class="last-deposit-user-blocks">
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-login-title top-title">Пользователь:</p>
+								<p class="last-deposit-user-login">User_324762395145</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-investition-title top-title">Инвестировано: </p>
+								<p class="last-deposit-user-investition-time">23.12.2022  |  23:47</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-time-title top-title">На время:</p>
+								<p class="last-deposit-user-time-too">14 дней</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-sum-title top-title">Сумма депозита:</p>
+								<p class="last-deposit-user-sum">0.1230 BNB</p>
+							</div>
+						</div>
+						<div class="last-deposit-user-blocks">
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-login-title top-title">Пользователь:</p>
+								<p class="last-deposit-user-login">User_324762395145</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-investition-title top-title">Инвестировано: </p>
+								<p class="last-deposit-user-investition-time">23.12.2022  |  23:47</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-time-title top-title">На время:</p>
+								<p class="last-deposit-user-time-too">14 дней</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-sum-title top-title">Сумма депозита:</p>
+								<p class="last-deposit-user-sum">0.1230 BNB</p>
+							</div>
+						</div>
+						<div class="last-deposit-user-blocks">
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-login-title top-title">Пользователь:</p>
+								<p class="last-deposit-user-login">User_324762395145</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-investition-title top-title">Инвестировано: </p>
+								<p class="last-deposit-user-investition-time">23.12.2022  |  23:47</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-time-title top-title">На время:</p>
+								<p class="last-deposit-user-time-too">14 дней</p>
+							</div>
+							<div class="last-deposit-user-block">
+								<p class="last-deposit-user-sum-title top-title">Сумма депозита:</p>
+								<p class="last-deposit-user-sum">0.1230 BNB</p>
+							</div>
+						</div>
+					</div>
+					<img class="background-orange-3" src="images/background-orange-3.png">
+					<img class="coins-bacgkround-left-last" src="images/coins-background-left-last.png">
+
+				</div>
+			</div>
+	</div>
+</div>
+
+	<footer class="footer">
+		<img class="coins-right-bottom" src="images/coins-right-bottom.png">
+		<div class="footer__container">
+			<div class="footer__logo-container">
+				<img class="footer__logo" src="images/logo.png" alt="logo">
+				<span class="footer__company-name">"Company name"</span>
+				<span class="footer__all-rights">all rights reserved © 2023</span>
+			</div>
+			<div class="footer__blocks-right">
+				<div class="footer__blocks-company">
+					<ul class="footer__list-menu">
+						<li>Депозит</li>
+						<li>Telegram</li>
+						<li>Аудит</li>
+						<li>Контакт</li>
+						<li>Как начать</li>
+					</ul>
+					<p class="footer__text-center">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae at, inventore iure magni quos Modi recusandae at, inventore iure magni quos  sit amet, consectetur adipiscing  sit adipiscing
+					</p>
+					<div class="footer__connect-wallet">
+						<a href="#" class="header__connect_a">
+							<div class="header__connect">
+								<img class="header__connect_money" src="images/money.png" width="34" height="28">
+								<div class="header__wallet-block">
+									<p class="header__connect_p">Подключить</p>
+									<p class="header__connect_p">кошелек</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="footer__companys">
+					<div class="footer__companys-block-container footer__showtrace-container">
+						<img class="footer__companys-block footer__showtrace" src="images/showtrace.png">
+					</div>
+					<div class="footer__companys-block-container footer__haze-container">
+						<img class="footer__companys-block footer__haze" src="images/haze.png">
+					</div>
+					<div class="footer__companys-block-container footer__dapp-container">
+						<img class="footer__companys-block footer__dapp" src="images/dapp.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script src="main.js"></script>
+</body>
+</html>
