@@ -1251,6 +1251,10 @@ ul.footer__list-menu {
 }
 
 @media all and (max-width: 560px) {
+
+	span.content__big-span {
+		width: 320px;
+	}
 	.header__connect_a {
 		display: none;
 	}
