@@ -124,7 +124,7 @@ p.header__connect_p {
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
-	width: 110px;
+	width: 50px;
 }
 
 .header__connect {
@@ -137,6 +137,7 @@ p.header__connect_p {
 	justify-content: center;
 	margin-top: 14px;
 	box-shadow: 7px 7px 0 #E46A24;
+	padding: 0;
 }
 
 .content {
@@ -666,6 +667,11 @@ span.dashboard__rewards-text {
 	display: flex;
 	flex-direction: column;
 	margin-left: 35px;
+}
+
+img.header__connect_money {
+	position: absolute;
+	left: 30px;
 }
 
 .deposit_plan-percent-span {
