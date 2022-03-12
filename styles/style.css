@@ -1200,8 +1200,17 @@ ul.footer__list-menu {
 		width: 80%;
 	}
 
-	.background-orange-2, .background-coin-right, .background-coin-right, 
-	.content__coin, .content__calculate-profit-title_icon, .background-coin-right-one, .background-orange-1 {
+	.background-orange-2, .background-coin-right, .background-coin-right, .background-orange-3, .coins-bacgkround-left-last,
+	.content__coin, .content__calculate-profit-title_icon, .background-coin-right-one, .background-orange-1
+	{
+		display: none;
+	}
+
+	.content__dashboard-title img {
+		display: none;
+	}
+
+	span.content__big-span {
 		display: none;
 	}
 
