@@ -398,6 +398,23 @@ span.calculate__days-deposit-2 {
 }
 
 
+.calculate__circle-days, .calculate__amount-range {
+	position: relative;
+}
+
+.canvas-circle, .canvas-circle-amount, .canvas-circle-no-amount, 
+.canvas-circle-no {
+	position: absolute;
+	height: 100%;
+	z-index: 5;
+}
+
+.canvas-circle-amount-bnb, .canvas-circle-no-amount-bnb {
+	position: absolute;
+	height: 200px;
+}
+
+
 .content__invest {
 	width: 450px;
 	height: 248px;

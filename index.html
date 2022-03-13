@@ -10,7 +10,7 @@
 	<nav class="header">
 		<div class="header__menu">
 			<div class="logo">
-				<img class="header__logo" src="images/logo.svg" width="152" height="104"></img>
+				<img class="header__logo" src="images/logo.svg" type="image/svg" width="152" height="104"></img>
 			</div>
 			<div class="menu-burger__header">
 				<span></span>
@@ -110,12 +110,16 @@
 					<div class="content__deposit-days">
 						<p class="calculate__deposit-p">Deposit period (days):</p>
 						<div class="calculate__circle calculate__circle-days">
+							<canvas class="canvas-circle"></canvas>
+							<canvas class="canvas-circle-no"></canvas>
 							<span id="calc-days" class="calculate__days-deposit calculate__days-deposit-1">56</span>
 							<span class="calculate__days-deposit calculate__days-deposit-2">дней</span>
 						</div>
 						<div class="calculate__amount-range">
+							<canvas class="canvas-circle-amount"></canvas>
+							<canvas class="canvas-circle-no-amount"></canvas>
 							<div class="calculate__amount-range">
-								<input class="calculate__amount-range-input" type="range" min="0" max="" value="56" step="1" id="input-days">
+								<input class="calculate__amount-range-input" type="range" min="0" max="100" value="0" step="1" id="input-days">
 								<div class="track"></div>
 							</div>
 						</div>
@@ -124,11 +128,13 @@
 					<div class="content__deposit-amount">
 						<p class="calculate__amount-p">Deposit period (days):</p>
 						<div class="calculate__circle calculate__circle-amount">
+							<canvas class="canvas-circle-amount-bnb"></canvas>
+							<canvas class="canvas-circle-no-amount-bnb"></canvas>
 							<span class="calculate__days-amount calculate__days-amount-1">414144.<span class="calculate__days-amount-span-into">56</span></span>
 							<span class="calculate__days-amount calculate__days-amount-2">BNB</span>
 						</div>
 						<div class="calculate__amount-range">
-							<input type="range" class="calculate__amount-range-input">
+							<input type="range" class="calculate__amount-range-input" min="0" max="100" value="0">
 							<div class="track"></div>
 						</div>
 					</div>
