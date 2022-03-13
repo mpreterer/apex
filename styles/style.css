@@ -1,3 +1,7 @@
+body, html {
+	height: 100%;
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -7,6 +11,7 @@ body {
 html {
 	background-color: #000;
 	overflow-x: hidden;
+	position: relative;
 }
 
 a {
@@ -190,9 +195,19 @@ p.content__reward-top {
 .background-orange-1 {
 	position: absolute;
 	right: 0;
+	height: 1300px;
 	width: 80%;
 	z-index: 3;
 	transform: translateX(15%);
+}
+
+button {
+	transition: .3s;
+}
+
+button:hover {
+	box-shadow: 0 0 10px #FF7F2D;
+	transition: .3s;
 }
 
 .content__info-cotainer {
@@ -881,14 +896,13 @@ img.header__connect_money {
 
 .footer {
 	width: 100%;
-	height: 100%;
-	height: 313px;
 	margin-top: 200px;
 	background: url('../images/footer.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
+	bottom: 0;
 }
 
 .footer__container {
@@ -900,7 +914,6 @@ img.header__connect_money {
 
 .footer__logo-container {
 	width: 279px;
-	height: 313px;
 	background-color: #fff;
 	box-shadow: 0 0 20px 9px rgba(255,82,12, 0.5);
 	border-radius: 20px 20px 0 0;
@@ -921,7 +934,6 @@ img.header__connect_money {
 }
 
 .footer__blocks-right {
-	width: 80%;
 	margin-left: 50px;
 }
 
@@ -1083,7 +1095,7 @@ ul.footer__list-menu {
 	}
 
 	.footer__companys-block-container {
-		width: 100%;
+		width: 50%;
 	}
 
 
@@ -1258,6 +1270,35 @@ ul.footer__list-menu {
 
 @media all and (max-width: 560px) {
 
+
+	.footer {
+		height: 90%;
+	}
+
+	.footer__companys-block-container {
+		width: 100%;
+	}
+
+	.footer__blocks-company {
+		margin-top: 0
+	}
+
+	.footer__container {
+		height: 90%;
+	}
+
+	.footer__logo-container {
+		border-radius: 20px;
+		height: 100%;
+	}
+
+	.content__dashboard-title {
+		margin-top: 450px;
+	}
+
+	.your-last-deposit-txt {
+		margin-top: 150px;
+	}
 	.menu-burger__header {
 		display: block;
 	}
@@ -1272,7 +1313,8 @@ ul.footer__list-menu {
 	}
 
 	.background-orange-2, .background-coin-right, .background-coin-right, .background-orange-3, .coins-bacgkround-left-last,
-	.content__coin, .content__calculate-profit-title_icon, .background-coin-right-one, .background-orange-1
+	.content__coin, .content__calculate-profit-title_icon, .background-coin-right-one, .background-orange-1, .background-coin-left,
+	.coins-right-bottom
 	{
 		display: none;
 	}
@@ -1379,4 +1421,39 @@ ul.footer__list-menu {
 	ul.header__menu-list {
 		display: none;
 	}
+}
+
+@media all and (min-width: 1650px) {
+	.footer {
+		height: 80%;
+	}
+}
+
+
+@media all and (min-width: 1650px) {
+	.header__menu {
+		width: 65%;
+		justify-content: space-evenly;
+	}
+
+	.footer {
+		height: 60%;
+	}
+
+	.footer__container {
+		height: 100%;
+	}
+
+	.footer__blocks-company {
+		margin-left: 10px;
+	}
+
+	.footer__blocks-right {
+		width: 90%;
+	}
+
+	.footer__connect-wallet {
+		margin-right: 20px;
+	}
+
 }
