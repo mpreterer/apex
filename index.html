@@ -30,6 +30,17 @@
 					<li class="burger__li-list">
 						<a class="nav-link" href="#">КАК НАЧАТЬ</a>
 					</li>
+					<li>
+					<a href="#" class="burger_connect_a">
+						<div class="header__connect_burger">
+							<img class="burger_connect_img" src="images/money.png" width="34" height="28">
+							<div class="header__wallet-block burger_connect">
+								<p class="header__connect_p">Подключить</p>
+								<p class="header__connect_p">кошелек</p>
+							</div>
+						</div>
+					</a>
+					</li>
 				</ul>
 			</div>
 			<ul class="header__menu-list">
@@ -48,6 +59,7 @@
 				<li class="header__li-list">
 					<a class="nav-link" href="#">КАК НАЧАТЬ</a>
 				</li>
+
 			</ul>
 			<a href="#" class="header__connect_a">
 				<div class="header__connect">
@@ -116,8 +128,6 @@
 							<span class="calculate__days-deposit calculate__days-deposit-2">дней</span>
 						</div>
 						<div class="calculate__amount-range">
-							<canvas class="canvas-circle-amount"></canvas>
-							<canvas class="canvas-circle-no-amount"></canvas>
 							<div class="calculate__amount-range">
 								<input class="calculate__amount-range-input" type="range" min="0" max="100" value="0" step="1" id="input-days">
 								<div class="track"></div>
@@ -484,7 +494,7 @@
 				<div class="deposit__plan-page deposit__plan-page-4"></div>
 			</div>
 
-			<div class="content__dashboard-title">
+			<div class="content__dashboard-title" id="title-user">
 				<img src="images/play.png" alt="icon" class="content__calculate-profit-title_icon">
 				<h2 class="content__calculate-profit-h2 content__dashboard-h2">last <span>Deposits users</span></h2>
 				<img class="background-coin-right-one" src="images/coin-one-right.webp">
@@ -709,6 +719,7 @@
 			</div>
 		</div>
 	</footer>
+<script src="jquery.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

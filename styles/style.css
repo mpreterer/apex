@@ -14,9 +14,17 @@ html {
 	position: relative;
 }
 
+canvas {
+	width: 100%;
+}
+
 a {
 	color: #000;
 	text-decoration: none;
+}
+
+button {
+	user-select: none;
 }
 
 .burger__menu-list {
@@ -25,6 +33,10 @@ a {
 
 .display {
 	display: block;
+}
+
+#title-user {
+	margin-top: 150px;
 }
 
 .menu-burger__header {
@@ -38,11 +50,13 @@ a {
  }
 
  .menu-burger__header ul {
- 	width: 190px;
  	position: absolute;
- 	padding: 5px;
- 	transform: translate(-54%,30%);
+ 	padding: 10px;
+ 	transform: translate(-68%,20%);
  	background-color: #FF7F2D;
+ 	left: -10%;
+ 	width: 280px;
+ 	height: 250px;
  }
 
   .menu-burger__header ul li {
@@ -143,6 +157,18 @@ p.header__connect_p {
 	margin-top: 14px;
 	box-shadow: 7px 7px 0 #E46A24;
 	padding: 0;
+}
+
+.header__connect_burger {
+	display: flex;
+	width: 150px;
+	padding: 10px;
+	background: linear-gradient(#FF2000, #FF571B);
+	border-radius: 20px;
+}
+
+.burger_connect_img {
+	margin-right: 10px;
 }
 
 .content {

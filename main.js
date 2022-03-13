@@ -2,9 +2,9 @@ const burger = document.querySelector('.menu-burger__header');
 const menu = document.querySelector('.menu-burger__header ul');
 const input1 = document.querySelector('#input-days');
 
-burger.onclick = function() {
-    menu.classList.toggle('display');
-};
+// burger.onclick = function() {
+//     menu.classList.toggle('display');
+// };
 
 const canvas = document.querySelector('.canvas-circle');
 const canvas_no = document.querySelector('.canvas-circle-no');
@@ -37,3 +37,14 @@ function circle_no(percent, sel) {
     sel.strokeStyle = '#070707';
     sel.stroke();
 }
+
+$(document).ready(function(){
+    $(".menu-burger__header span").click(function(){
+    $("ul.burger__menu-list").toggle(700);
+    $(".burger_connect").animate({display:'block;'});
+    $(".burger_connect_img").animate({display:'block'});
+    $(".header__connect_burger").animate({display:'block'});
+});
+});
+
+
