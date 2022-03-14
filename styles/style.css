@@ -15,7 +15,7 @@ html {
 }
 
 canvas {
-	width: 100%;
+	width:200px;
 }
 
 a {
@@ -128,7 +128,7 @@ ul.header__menu-list {
 
 ul.header__menu-list li {
 	list-style: none;
-	margin-left: 30px;
+	margin-left: 20px;
 }
 
 .header__connect_a {
@@ -536,6 +536,7 @@ p.invest__end-amount-bnb {
 	z-index: 3;
 	width: 60%;
 	transform: translate(45%,-10%);
+	overflow: hidden;
 }
 
 .coins-right-bottom {
@@ -940,6 +941,7 @@ img.header__connect_money {
 .footer {
 	width: 100%;
 	margin-top: 200px;
+	/*height: 60%;*/
 	background: url('../images/footer.webp');
 	background-size: cover;
 	background-position: center;
@@ -950,6 +952,7 @@ img.header__connect_money {
 
 .footer__container {
 	width: 80%;
+	height: 100%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -964,6 +967,7 @@ img.header__connect_money {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 .footer__logo-container span {
@@ -1042,12 +1046,9 @@ ul.footer__list-menu {
 		font-size: 12px;
 	}
 
-	.header__connect {
-		width: 170px;
-	}
-
-	.header__connect_a {
-		width: 170px;
+	.header__connect_money {
+		width: 20px;
+		height: 18px;
 	}
 
 	.header__wallet-block p {
@@ -1075,7 +1076,21 @@ ul.footer__list-menu {
 
 }
 
+@media all and (max-width:  1519px) {
+	.background-orange-3 {
+		display: none;
+	}
+
+	.background-orange-1, .background-coin-right-one, .content__coin,
+	.background-coin-right {
+		display: none;
+	}
+
+}
+
 @media all and (max-width: 1300px) {
+
+
 
 	.content__calculate-profit-container p, .content__calculate-profit-container a {
 		font-size: 14px;
@@ -1120,23 +1135,6 @@ ul.footer__list-menu {
 		display: none;
 	}
 
-	.footer__blocks-company {
-		flex-direction: column;
-	}
-
-	.footer {
-		height: 100%;
-	}
-
-	.footer__logo-container {
-		height: 655px;
-	}
-
-	.footer__companys {
-		flex-direction: column;
-		margin-top: 20px;
-	}
-
 	.footer__companys-block-container {
 		width: 50%;
 	}
@@ -1144,22 +1142,45 @@ ul.footer__list-menu {
 
 }
 
-@media all and (max-width: 920px) {
+@media all and (max-width: 950px) {
 	.content__dashboard-title h2 {
 		font-size: 20px;
+	}
+
+	.footer__blocks-company {
+		flex-direction: column;
+	}
+
+	.your-last-deposit-txt {
+		margin-top: 150px;
+	}
+
+	.background-orange-2, .background-coin-right, .background-coin-right, .background-orange-3, .coins-bacgkround-left-last,
+	.content__coin, .content__calculate-profit-title_icon, .background-coin-right-one, .background-orange-1, .background-coin-left,
+	.coins-right-bottom
+	{
+		display: none;
 	}
 
 	.content__calculate-profit-title_icon, .content__calculate-profit-title_icon {
 		width: 80px;
 	}
 
+	.menu-burger__header {
+		display: block;
+	}
+
+	.header__connect_a {
+		display: none;
+	}
+
+	ul.header__menu-list {
+		display: none;
+	}
+
 	.content__invest {
 		width: 400px;
 	}
-
-	.footer__companys-block-container {
-	}
-
 
 	.content__calculate-profit-title h2 {
 		font-size: 20px
@@ -1271,6 +1292,10 @@ ul.footer__list-menu {
 		margin-left: 10px;
 	}
 
+	.footer__companys {
+		flex-direction: column;
+	}
+
 }
 
 @media all and (max-width: 650px) {
@@ -1311,40 +1336,20 @@ ul.footer__list-menu {
 	}
 }
 
-@media all and (max-width: 560px) {
 
-
-	.footer {
-		height: 90%;
-	}
-
-	.footer__companys-block-container {
-		width: 100%;
-	}
+@media all and (max-width: 660px) {
 
 	.footer__blocks-company {
 		margin-top: 0
 	}
-
-	.footer__container {
-		height: 90%;
-	}
-
 	.footer__logo-container {
 		border-radius: 20px;
-		height: 100%;
 	}
 
 	.content__dashboard-title {
 		margin-top: 450px;
 	}
-
-	.your-last-deposit-txt {
-		margin-top: 150px;
-	}
-	.menu-burger__header {
-		display: block;
-	}
+	
 	span.content__big-span {
 		width: 320px;
 	}
@@ -1355,12 +1360,7 @@ ul.footer__list-menu {
 		width: 80%;
 	}
 
-	.background-orange-2, .background-coin-right, .background-coin-right, .background-orange-3, .coins-bacgkround-left-last,
-	.content__coin, .content__calculate-profit-title_icon, .background-coin-right-one, .background-orange-1, .background-coin-left,
-	.coins-right-bottom
-	{
-		display: none;
-	}
+	
 
 	.content__dashboard-title img {
 		display: none;
@@ -1466,21 +1466,61 @@ ul.footer__list-menu {
 	}
 }
 
-@media all and (min-width: 1650px) {
-	.footer {
-		height: 80%;
+@media all and (max-width: 1700px) {
+	.header__connect_a, .header__connect {
+		width: 190px;
+		font-size: 14px;
+	}
+
+	.logo {
+		width: 250px;
+	}
+
+	ul.header__menu-list {
+		margin-right: 10px;
 	}
 }
 
 
-@media all and (min-width: 1650px) {
-	.header__menu {
+
+@media all and (min-width: 1520px) {
+
+	.background-orange-1 {
+		width: 50%;
+		transform: translateX(-10%);
+	}
+
+	.content__coin {
+		right: 10%;
+	}
+	.background-orange-3 {
+		position: absolute;
+		left: 25.5%;
+	}
+
+	.background-coin-right {
+		position: absolute;
+		transform: translate(97%, -60%);
+		width: 13%;
+	}
+
+	.background-coin-right-one {
+		width: 15%;
+		transform: translate(84%, -50%);
+	}
+
+	.header__menu { 	
 		width: 65%;
 		justify-content: space-evenly;
 	}
 
+}
+
+@media all and (min-width: 1700px) {
+
+
 	.footer {
-		height: 60%;
+		height: 70%;
 	}
 
 	.footer__container {
@@ -1498,5 +1538,4 @@ ul.footer__list-menu {
 	.footer__connect-wallet {
 		margin-right: 20px;
 	}
-
 }
