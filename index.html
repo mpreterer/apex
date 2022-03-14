@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/circle.css" rel="stylesheet">
+	<link href="styles/circle1.css" rel="stylesheet">
 	<title>AvaxPlus</title>
 </head>
 <body>
@@ -122,30 +124,30 @@
 					<div class="content__deposit-days">
 						<p class="calculate__deposit-p">Deposit period (days):</p>
 						<div class="calculate__circle calculate__circle-days">
-							<canvas class="canvas-circle"></canvas>
-							<canvas class="canvas-circle-no"></canvas>
-							<span id="calc-days" class="calculate__days-deposit calculate__days-deposit-1">56</span>
-							<span class="calculate__days-deposit calculate__days-deposit-2">дней</span>
+							<div class="progress">
+							  <div class="precent">56</div>
+							  <div class="day"><span>ДНЕЙ</span></div>
+							  <div class="circle"></div>
+							  <div class="range">
+						    <input type="range" min="0" max="100" value="100" id="range">
+						    <div class="filled"></div>
+						  </div>
 						</div>
-						<div class="calculate__amount-range">
-							<div class="calculate__amount-range">
-								<input class="calculate__amount-range-input" type="range" min="0" max="100" value="0" step="1" id="input-days">
-								<div class="track"></div>
-							</div>
 						</div>
 					</div>
 					<img src="images/calc.png" alt="calucalter" class="cotent__calculate-img" width="170" height="170">
 					<div class="content__deposit-amount">
 						<p class="calculate__amount-p">Deposit period (days):</p>
-						<div class="calculate__circle calculate__circle-amount">
-							<canvas class="canvas-circle-amount-bnb"></canvas>
-							<canvas class="canvas-circle-no-amount-bnb"></canvas>
-							<span class="calculate__days-amount calculate__days-amount-1">414144.<span class="calculate__days-amount-span-into">56</span></span>
-							<span class="calculate__days-amount calculate__days-amount-2">BNB</span>
+						<div class="calculate__circle calculate__circle-days">
+							<div class="progress1">
+							  <div class="precent">414144.56</div>
+							  <div class="day"><span>BNB</span></div>
+							  <div class="circle"></div>
+							  <div class="range">
+						    <input type="range" min="0" max="414144" value="100" id="range1">
+						    <div class="filled"></div>
+						  </div>
 						</div>
-						<div class="calculate__amount-range">
-							<input type="range" class="calculate__amount-range-input" min="0" max="100" value="0">
-							<div class="track"></div>
 						</div>
 					</div>
 				</div>
@@ -721,5 +723,7 @@
 	</footer>
 <script src="jquery.min.js"></script>
 <script src="main.js"></script>
+<script src="circle.js"></script>
+<!-- <script src="circle1.js"></script> -->
 </body>
 </html>
